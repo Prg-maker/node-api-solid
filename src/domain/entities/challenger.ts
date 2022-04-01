@@ -6,13 +6,13 @@ type ChalengerProps = {
 
 }
 
-class Chalenger extends Entity<ChalengerProps>{
+export class Challenger extends Entity<ChalengerProps>{
   private constructor(props: ChalengerProps, id?: string){
     super(props , id)
   }
 
   static create(props: ChalengerProps, id?: string){
-    const chalenger = new Chalenger(props , id)
+    const chalenger = new Challenger(props , id)
 
     return chalenger
   }

@@ -7,7 +7,7 @@ type StudentProps = {
   
 }
 
-class Student extends Entity<StudentProps>{
+export class Student extends Entity<StudentProps>{
   private constructor(props: StudentProps, id?: string){
     super(props , id)
   }
